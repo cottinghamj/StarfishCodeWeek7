@@ -1,0 +1,28 @@
+
+public class Vars {
+
+	public static void main(String[] args) {
+		// Format of a variable : type name = value;
+		// if not giving it a value: type name;
+		
+		int x = 30;  // whole numbers neg to pos
+		System.out.println(x);
+		
+		double y; // decimals
+		y = -2.2222222222;
+		System.out.println(y);
+		
+		String str = "Starfish";
+		str = "value";
+		System.out.println(str);
+		
+		boolean b = true;
+		System.out.println(b);
+		
+		char a = 97;
+		System.out.println(a);
+		
+		
+	}
+
+}

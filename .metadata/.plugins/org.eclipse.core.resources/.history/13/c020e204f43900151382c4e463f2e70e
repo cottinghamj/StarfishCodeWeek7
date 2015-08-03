@@ -1,0 +1,18 @@
+
+public class Vars {
+
+	public static void main(String[] args) {
+		// Format of a variable : type name = value;
+		// if not giving it a value: type name;
+		
+		int x = 30;
+		System.out.println(x);
+		
+		double y;
+		y = 2.2222222222;
+		System.out.println(y);
+		
+		
+	}
+
+}
