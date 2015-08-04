@@ -1,0 +1,53 @@
+// package would go here if you have one
+import java.util.Scanner;
+public class Review {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String name = "starfish";
+		System.out.println(name);
+		
+		//name += "!";
+		name = name + "!";
+		System.out.println(name);
+		
+		int area = 10;
+		if(area > 30){ // No ';' after ifs
+			System.out.println("too big");
+		}else if(area > 15 && area <= 30){
+			System.out.println("Excellent Size!");
+		}else{
+			System.out.println("good size");
+		}
+		
+		
+		Scanner myScanner = new Scanner(System.in);
+		System.out.println("Hey you! Choose a number");
+		area = myScanner.nextInt();
+		if(area > 30){ // No ';' after ifs
+			System.out.println("too big");
+		}else if(area > 15 && area <= 30){
+			System.out.println("Excellent Size!");
+		}else{
+			System.out.println("good size");
+		}
+		
+		area = area + 30;
+		area *= 10; // Short cut for area = area * 10;
+		
+		area -= 50;
+		area /= 1000;
+		
+		int g = 0;
+		int sum = 0;
+		while(g < 10){
+			g++; // shortcut for adding one
+			sum = g + 0;
+			System.out.println(g);
+		}
+		System.out.println(sum);
+		
+		
+	}
+
+}

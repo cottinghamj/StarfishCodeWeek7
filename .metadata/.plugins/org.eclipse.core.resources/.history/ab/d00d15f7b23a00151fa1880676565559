@@ -1,0 +1,23 @@
+
+public class Review {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String name = "starfish";
+		System.out.println(name);
+		
+		//name += "!";
+		name = name + "!";
+		System.out.println(name);
+		
+		int area = 50;
+		if(area > 30){ // No ';' after ifs
+			System.out.println("too big");
+		}else{
+			System.out.println("good size");
+		}
+		
+		
+	}
+
+}

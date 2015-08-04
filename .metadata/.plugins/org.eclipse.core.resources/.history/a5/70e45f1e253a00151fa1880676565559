@@ -1,0 +1,25 @@
+
+public class Boolean {
+
+	public static void main(String[] args) {
+		// Boolean expressions are statements that evaluate to either true of false
+		
+		// All the types of boolean
+		/*
+		 * >	 - greater than
+		 * <	 - less than
+		 * >=	 - greater than or equal 
+		 * <=	 - less than or equal
+		 * ==	 - equal to 
+		 * !=	 - not equal to
+		 * 
+		 * Combinatorial Logic
+		 * && 	- All must be true 
+		 * 		eg. if(age > 50 && age < 100 && year > 2015)
+		 * 
+		 * 
+		 * 
+		 */
+	}
+
+}

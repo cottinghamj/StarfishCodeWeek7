@@ -1,0 +1,40 @@
+// package would go here if you have one
+import java.util.Scanner;
+public class Review {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String name = "starfish";
+		System.out.println(name);
+		
+		//name += "!";
+		name = name + "!";
+		System.out.println(name);
+		
+		int area = 10;
+		if(area > 30){ // No ';' after ifs
+			System.out.println("too big");
+		}else if(area > 15 && area <= 30){
+			System.out.println("Excellent Size!");
+		}else{
+			System.out.println("good size");
+		}
+		
+		
+		Scanner myScanner = new Scanner(System.in);
+		System.out.println("Hey you! Choose a number");
+		area = myScanner.nextInt();
+		if(area > 30){ // No ';' after ifs
+			System.out.println("too big");
+		}else if(area > 15 && area <= 30){
+			System.out.println("Excellent Size!");
+		}else{
+			System.out.println("good size");
+		}
+		
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,13 @@
+
+public class Loops {
+
+	public static void main(String[] args) {
+		int apples = 10;
+		// while loop will keep executing this code until the condition in parentheses is met
+		while(apples > 0){
+			System.out.println("You have eaten " + (10 - apples) + " apples so far" );
+			
+			apples = apples - 1;
+		}
+	}
+}
