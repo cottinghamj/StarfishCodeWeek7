@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Loop2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int iterator = 0;
+		Scanner myScanner = new Scanner(System.in);
+		int input;
+		int sum = 0;
+		while(iterator < 10){
+			System.out.println("Hey");
+			input = myScanner.nextInt();
+			sum = sum + 1;
+			iterator += 1;
+		}
+		System.out.println(sum);
+	}
+
+}

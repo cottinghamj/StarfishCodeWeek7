@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Loop2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int iterator = 0;
+		Scanner myScanner = new Scanner(System.in);
+		int input;
+		while(iterator < 10){
+			System.out.println("Hey");
+			input = myScanner.nextInt();
+			iterator += 1;
+		}
+	}
+
+}
