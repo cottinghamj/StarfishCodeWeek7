@@ -1,0 +1,60 @@
+import java.util.Scanner;
+
+public class Enemy {
+
+	public String name;
+	public int health, strength, posX, posY;
+	
+	public Enemy(){
+		health = 50;
+		strength = 5;
+		posX = 0;
+		posY = 0;
+		name = "Enemy";
+	}
+	
+	public boolean isAlive(){
+		return health > 0;
+	}
+	
+	public boolean fight(Player p1){
+		Scanner input = new Scanner(System.in);
+		String choice;
+		while(isAlive() && p1.isAlive()){
+			// let's keep the fight going
+			choice = input.nextLine();
+			if(choice.equalsIgnoreCase("punch")){
+				
+			}else if(choice.equalsIgnoreCase("huggle")){
+				
+			}
+			
+		}
+		
+		return true;
+	}
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Player p1 = new Player("Starfish");
+		Enemy e1 = new Enemy();
+		e1.name = "KitKat";
+		
+		System.out.println(e1.name);
+		System.out.println(p1.isAlive());
+		
+		p1.health = 0;
+		System.out.println(p1.isAlive());
+		
+		p1.health = 100;
+		
+		System.out.println("A roach bites you");
+		p1.health -= 20;
+		
+		
+		System.out.println("You crunch the roach with " + p1.strength + " strength");
+	}
+
+}
+
