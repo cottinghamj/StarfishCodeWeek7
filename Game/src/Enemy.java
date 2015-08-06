@@ -34,17 +34,37 @@ public class Enemy {
 			}else if(choice.equalsIgnoreCase("huggle")){
 				health -= p1.strength + 6;
 				System.out.println("You dealt " + (p1.strength + 6) + " damage");
+			}else if(choice.equalsIgnoreCase("saute")){
+				health -= health;
+				p1.specialAttacks --;
+				System.out.println("You killed " + name);
 			}
 			
-			System.out.println("Enemy now has " + health + " health");
+			System.out.println(name + " now has " + health + " health");
 			
 			// End of attack phase 
 			
 			// Enemy attack phase
 			if(isAlive()){
-				p1.health -= this.strength;
-				System.out.println("Enemy dealt you " + this.strength + " damage");
-				System.out.println("You now have " + p1.health + " health");
+				
+				// Probability so that enemy can have different moves
+				double rand = Math.random(); // returns to us a number between 0 and 1
+				
+				if(rand <= .5){
+					System.out.println(name + " strangled you!");
+					p1.health -= this.strength;
+					System.out.println("Enemy dealt you " + this.strength + " damage");
+					System.out.println("You now have " + p1.health + " health");
+				}else if(rand > .5 && rand <= .9){
+					System.out.println(name + " kicked you!");
+					p1.health -= this.strength;
+					System.out.println("Enemy dealt you " + this.strength + " damage");
+					System.out.println("You now have " + p1.health + " health");
+				}else if(rand > .9){
+					System.out.println(name + " insta-killed you!");
+					p1.health -= p1.health;
+				}
+				
 			}
 		}
 		

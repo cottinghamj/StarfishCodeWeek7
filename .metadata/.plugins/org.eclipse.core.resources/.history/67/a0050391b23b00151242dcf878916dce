@@ -1,0 +1,17 @@
+
+public class DeafGrandma extends Enemy{
+	
+	public boolean cane;
+	
+	public DeafGrandma(){
+
+		super();
+		health = 30;
+		strength = 50;
+		posX = 0;
+		posY = 0;
+		name = "Deaf Grandma";
+	
+	}
+	
+}

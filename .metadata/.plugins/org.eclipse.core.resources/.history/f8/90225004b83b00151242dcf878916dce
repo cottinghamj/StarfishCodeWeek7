@@ -1,0 +1,54 @@
+package graphics;
+
+import processing.core.PApplet;
+import processing.core.PImage;
+
+
+public class Graphics extends PApplet {
+
+	PImage pic;
+	Player p1;
+	
+	public void setup() {
+		size(700, 700);
+		pic = loadImage("logo.png.PNG");
+		p1 = new Player("Starfish");
+	}
+
+	// Constantly being called
+	public void draw() {
+		background(5, 5, 5); // (r, g, b) -> red, green, blue each one goes form 0 - 255
+		text("yo", 200, 300);
+		
+		image(pic, 100, 100);
+		
+		person();
+		
+		move();
+		
+	}
+	
+	public void keyPressed(){
+		if(key == 'a'){
+			System.out.println("You want to move left");
+		}
+	}
+	
+	public void move(){
+		if(movingRight){
+			
+		}
+	}
+	
+	public void person(){
+		fill(255, 255, 255);
+		ellipse(170, 330, 50, 50);
+		ellipse(340, 330, 50, 50);
+		
+		fill(0, 0, 200);
+		rect(220, 500, 70, 40);
+		
+		fill(200, 0, 0);
+		triangle(100, 100, 200, 200, 24, 400); // You need 3 (x,y) positions
+	}
+}

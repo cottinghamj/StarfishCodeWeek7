@@ -1,0 +1,16 @@
+package graphics;
+
+import processing.core.PApplet;
+
+
+public class Graphics extends PApplet {
+
+	public void setup() {
+		size(700, 700);
+	}
+
+	// Constantly being called
+	public void draw() {
+		background(5, 5, 5);
+	}
+}
